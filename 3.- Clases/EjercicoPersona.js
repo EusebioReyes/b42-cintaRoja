@@ -55,4 +55,4 @@ const persona1 = new Persona('Eusebio', 'Reyes Lopez', '27/06/1989', 'M', 78, 1.
 const date1 = new DatePersona('27/06/1989');
 console.log(persona1.getRfc());
 
-console.log(date1.anioDuo);
+console.log(date1.dia);

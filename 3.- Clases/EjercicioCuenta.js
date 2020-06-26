@@ -39,5 +39,6 @@ class Cuenta{
 }
 const cuenta1 = new Cuenta('Eusebio de Jesus')
 console.log(cuenta1.getCantidadEnCuenta());
-console.log(cuenta1.ingresar(10));
+console.log(cuenta1.ingresar(100));
 console.log(cuenta1.getCantidadEnCuenta());
+console.log(cuenta1);
