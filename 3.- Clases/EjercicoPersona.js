@@ -34,7 +34,7 @@ class Persona{
         apellidosRfc = corta[0].substring(0,2) + corta[1].substring(0,1);
         
 
-        return `${apellidosRfc}${primerNombre}${cumpleAnios.anioDuo}0${cumpleAnios.mes}0${cumpleAnios.dia}${this.sexo}`;
+        return `${apellidosRfc.toUpperCase()}${primerNombre.toUpperCase()}${cumpleAnios.anioDuo}0${cumpleAnios.mes}0${cumpleAnios.dia}${this.sexo}`;
     }
 }
 
@@ -49,41 +49,7 @@ class DatePersona{
     };
 }
 
-class Cuenta{
-    constructor(titular, cantidad){
-        this.titular = titular;
-        this.cantidad = cantidad;
-        this.estado = true;
-    };
 
-    ingresar(ingreso){
-        if(estado){
-            if(this.cantidad + ingreso > 900){
-                return 'No puede tener mas de 900 pesos en su cuenta';
-            }else{
-                this.cuenta = cuenta + ingreso;
-                return `El total de su cuenta es ${cantidad}`;
-            }
-        }else{return 'Su cuenta esta bloqueada';}
-       
-        
-    };
-    retirar(retiro){
-        if(estado){
-            if(this.cantidad - ingreso < 10){
-                return 'No puede tener menos de 10 pesos en su cuenta';
-            }else{
-                this.cuenta = cuenta + ingreso;
-                return `El total de su cuenta es ${cantidad}`;
-            }
-        }else{return 'Su cuenta esta bloqueada';}
-    };
-
-    estadoCuenta(){
-        return cuenta == true?'Su cuenta esta activa':'Su cuenta esta bloqueada';
-    }
-    
-}
 
 const persona1 = new Persona('Eusebio', 'Reyes Lopez', '27/06/1989', 'M', 78, 1.75)
 const date1 = new DatePersona('27/06/1989');
